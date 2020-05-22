@@ -1,0 +1,45 @@
+<div class="row my-3">
+  <div class="col">
+    <button class="btn btn-dark" (click)="createContact()">
+      <i class="fas fa-plus"></i> Create New Contact
+    </button>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <table class="table table-light">
+      <thead class="thead-light">
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Balance</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let contact of contacts">
+          <td>{{ contact.name }}</td>
+          <td>{{ contact.email }}</td>
+          <td>{{ contact.balance }}</td>
+          <td>
+            <button
+              class="btn btn-secondary px-5"
+              (click)="editContact(contact._id)"
+            >
+              Edit
+            </button>
+          </td>
+          <td>
+            <button
+              class="btn bg-white text-danger p-2"
+              (click)="deleteContact(contact._id)"
+            >
+              Delete
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

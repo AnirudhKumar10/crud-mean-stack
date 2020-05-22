@@ -1,0 +1,42 @@
+<div class="row">
+  <div class="col m-3">
+    <form>
+      <div class="form-group">
+        <label for="my-input">Name</label>
+        <input
+          id="my-input"
+          class="form-control"
+          type="text"
+          name="name"
+          [(ngModel)]="contact.name"
+        />
+      </div>
+      <div class="form-group">
+        <label for="my-input">Email</label>
+        <input
+          id="my-input"
+          class="form-control"
+          type="email"
+          name="email"
+          [(ngModel)]="contact.email"
+        />
+      </div>
+      <div class="form-group">
+        <label for="my-input">Balance</label>
+        <input
+          id="my-input"
+          class="form-control"
+          type="text"
+          name="balance"
+          [(ngModel)]="contact.balance"
+        />
+      </div>
+      <button class="btn bg-white text-danger mr-3 px-3 p-2" (click)="cancel()">
+        Cancel
+      </button>
+      <button class="btn btn-success px-3 p-2" (click)="updateContact()">
+        Update
+      </button>
+    </form>
+  </div>
+</div>
