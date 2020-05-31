@@ -1,6 +1,6 @@
 # Mean Stack Crud Application
 
-This is a mean stack crud mean application. Add the mongodb url in app.js in src folder.
+This is a mean stack crud mean application. Add the **mongodb url in app.js** in src folder.
 
 #### npm install
 
