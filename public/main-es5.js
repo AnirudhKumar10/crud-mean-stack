@@ -598,7 +598,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         _classCallCheck(this, ContactService);
 
         this.http = http;
-        this.url = 'http://localhost:4000/clients';
+        this.url = '/clients';
       }
 
       _createClass(ContactService, [{

@@ -281,7 +281,7 @@ __webpack_require__.r(__webpack_exports__);
 class ContactService {
     constructor(http) {
         this.http = http;
-        this.url = 'http://localhost:4000/clients';
+        this.url = '/clients';
     }
     getContact(id) {
         return this.http.get(this.url + '/' + id);

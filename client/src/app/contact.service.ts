@@ -10,7 +10,7 @@ export class ContactService {
   constructor(private http: HttpClient) {}
 
   contact: Contact[];
-  url = 'http://localhost:4000/clients';
+  url = '/clients';
 
   getContact(id) {
     return this.http.get(this.url+'/'+id)
